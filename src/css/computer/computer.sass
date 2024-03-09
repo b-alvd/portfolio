@@ -4,32 +4,71 @@
         bottom: 0
         display: flex
         align-items: center
+        justify-content: space-between
         width: 100%
         background-color: #303030
         border-top: 1px solid #ffffff23
-        .icon_windows
-            width: 25px
-            height: 25px
-            padding: 5px
-            margin: 10px
-            border-radius: 5px
-            transition: all ease-in-out 0.2s
-        .icon_windows:hover
-            background-color: #4d4d4d
-            cursor: pointer
-        .research
+        #taskbar_left
             display: flex
             align-items: center
-            height: 4vh
-            margin: 5px 0
-            padding-right: 5.5vw
-            background-color: #4d4d4d
-            border-radius: 20px
-            .icon_magnifying_glass
+            .icon_windows
                 width: 25px
                 height: 25px
+                padding: 5px
+                margin: 10px
+                border-radius: 5px
+                transition: all ease-in-out 0.2s
+            .icon_windows:hover
+                background-color: #4d4d4d
+                cursor: default
+            .research
+                display: flex
+                align-items: center
+                height: 4vh
+                margin: 5px 0
+                padding-right: 5.5vw
+                background-color: #4d4d4d
+                border-radius: 20px
+                .icon_magnifying_glass
+                    width: 25px
+                    height: 25px
+                    margin-right: 0.5vw
+                    margin-left: 0.5vw
+                p
+                    font-size: 14px
+                    color: white
+        #taskbar_right
+            display: flex
+            align-items: center
+            #params
+                display: flex
+                align-items: center
                 margin-right: 0.5vw
-                margin-left: 0.5vw
-            p
-                font-size: 14px
-                color: white
+                padding: 10px 5px
+                border-radius: 5px
+                transition: all ease-in-out 0.2s
+                .temporality
+                    font-size: 11px
+                    font-weight: 300
+                    text-align: right
+                    color: white
+                    margin-right: 0.3vw
+                .bell
+                    width: 21px
+            #params:hover
+                background-color: #4d4d4d
+                cursor: default
+            #params2
+                margin-right: 1.3vh
+                padding: 10px 5px
+                border-radius: 5px
+                transition: all ease-in-out 0.2s
+                .battery
+                    width: 21px
+                .speaker
+                    width: 21px
+                .wifi
+                    width: 21px
+            #params2:hover
+                background-color: #4d4d4d
+                cursor: default

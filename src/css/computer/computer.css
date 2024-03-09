@@ -3,11 +3,16 @@
   bottom: 0;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
   background-color: #303030;
   border-top: 1px solid rgba(255, 255, 255, 0.137254902);
 }
-#computer_container #taskbar .icon_windows {
+#computer_container #taskbar #taskbar_left {
+  display: flex;
+  align-items: center;
+}
+#computer_container #taskbar #taskbar_left .icon_windows {
   width: 25px;
   height: 25px;
   padding: 5px;
@@ -15,11 +20,11 @@
   border-radius: 5px;
   transition: all ease-in-out 0.2s;
 }
-#computer_container #taskbar .icon_windows:hover {
+#computer_container #taskbar #taskbar_left .icon_windows:hover {
   background-color: #4d4d4d;
-  cursor: pointer;
+  cursor: default;
 }
-#computer_container #taskbar .research {
+#computer_container #taskbar #taskbar_left .research {
   display: flex;
   align-items: center;
   height: 4vh;
@@ -28,13 +33,58 @@
   background-color: #4d4d4d;
   border-radius: 20px;
 }
-#computer_container #taskbar .research .icon_magnifying_glass {
+#computer_container #taskbar #taskbar_left .research .icon_magnifying_glass {
   width: 25px;
   height: 25px;
   margin-right: 0.5vw;
   margin-left: 0.5vw;
 }
-#computer_container #taskbar .research p {
+#computer_container #taskbar #taskbar_left .research p {
   font-size: 14px;
   color: white;
+}
+#computer_container #taskbar #taskbar_right {
+  display: flex;
+  align-items: center;
+}
+#computer_container #taskbar #taskbar_right #params {
+  display: flex;
+  align-items: center;
+  margin-right: 0.5vw;
+  padding: 10px 5px;
+  border-radius: 5px;
+  transition: all ease-in-out 0.2s;
+}
+#computer_container #taskbar #taskbar_right #params .temporality {
+  font-size: 11px;
+  font-weight: 300;
+  text-align: right;
+  color: white;
+  margin-right: 0.3vw;
+}
+#computer_container #taskbar #taskbar_right #params .bell {
+  width: 21px;
+}
+#computer_container #taskbar #taskbar_right #params:hover {
+  background-color: #4d4d4d;
+  cursor: default;
+}
+#computer_container #taskbar #taskbar_right #params2 {
+  margin-right: 1.3vh;
+  padding: 10px 5px;
+  border-radius: 5px;
+  transition: all ease-in-out 0.2s;
+}
+#computer_container #taskbar #taskbar_right #params2 .battery {
+  width: 21px;
+}
+#computer_container #taskbar #taskbar_right #params2 .speaker {
+  width: 21px;
+}
+#computer_container #taskbar #taskbar_right #params2 .wifi {
+  width: 21px;
+}
+#computer_container #taskbar #taskbar_right #params2:hover {
+  background-color: #4d4d4d;
+  cursor: default;
 }/*# sourceMappingURL=computer.css.map */

@@ -1,0 +1,1 @@
+function updateTime(){const t=new Date,e=document.getElementById("date"),n=document.getElementById("time"),i=t.toLocaleDateString("fr-FR",{day:"2-digit",month:"2-digit",year:"numeric"}),a=t.toLocaleTimeString();e.textContent=i,n.textContent=a}setInterval(updateTime,1e3),updateTime();

@@ -19,11 +19,27 @@
             </section>
     
             <section id="taskbar">
-                <img class="icon_windows" src="./src/imgs/windows.webp" alt="">
-                <div class="research">
-                    <img class="icon_magnifying_glass" src="./src/imgs/icon_magnifying_glass.png" alt="">
-                    <p>Rechercher</p>
-                </div>
+                <section id="taskbar_left">
+                    <img class="icon_windows" src="./src/imgs/windows.webp" alt="">
+                    <div class="research">
+                        <img class="icon_magnifying_glass" src="./src/imgs/icon_magnifying_glass.png" alt="">
+                        <p>Rechercher</p>
+                    </div>
+                </section>
+                <section id="taskbar_right">
+                    <section id="params2">
+                        <img class="wifi" src="./src/imgs/icon_wifi.png" alt="">
+                        <img class="speaker" src="./src/imgs/icon_speaker.png" alt="">
+                        <img class="battery" src="./src/imgs/icon_battery.webp" alt="">
+                    </section>
+                    <section id="params">
+                        <div class="temporality">
+                            <div id="time"></div>
+                            <div id="date"></div>
+                        </div>
+                        <img class="bell" src="./src/imgs/icon_bell.png" alt="">
+                    </section>
+                </section>
             </section>
         </section>
 
@@ -207,6 +223,7 @@
             </section>
         </section>
 
+        <script src="./src/js/update_time-min.js"></script>
         <script src="./src/js/modals-min.js"></script>
     </body>
 </html>
