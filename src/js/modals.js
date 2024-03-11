@@ -38,8 +38,15 @@ btn.onclick = function() {
     modal_contact.style.display = "block";
 }
 
-// window.onclick = function(event) {
-//     if (event.target == modal) {
-//         modal.style.display = "none";
-//     }
-// }
+
+// WINDOWS
+var modal_windows = document.getElementById("modal_windows");
+var btn = document.getElementById("open_modal_windows");
+btn.onclick = function() {
+    modal_windows.style.display = "block";
+}
+window.onclick = function(event) {
+    if (event.target == modal_windows) {
+        modal_windows.style.display = "none";
+    }
+}

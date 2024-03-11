@@ -9,11 +9,11 @@
 }
 #login_page_container h1 {
   color: white;
+  cursor: default;
 }
 #login_page_container #redirection_button {
   padding: 15px 25px;
   font-size: 16px;
-  cursor: pointer;
   margin-top: 5vh;
   background-color: #3a3a3a;
   color: #fff;

@@ -8,19 +8,32 @@
         <link rel="stylesheet" href="./src/css/global_styles/global_styles-min.css">
         <link rel="stylesheet" href="./src/css/computer/computer-min.css">
         <link rel="stylesheet" href="./src/css//folder_modal/folder_modal-min.css">
+        <link rel="stylesheet" href="./src/css/windows_modal/windows_modal-min.css">
     </head>
     <body>
         <section id="computer_container">
-            <section id="login_page">
-                <button id="open_folder_modal_infos">Informations</button>
-                <button id="open_folder_modal_career">Parcours</button>
-                <button id="open_folder_modal_projects">Projets</button>
-                <button id="open_folder_modal_contact">Contact</button>
+            <section id="desktop">
+                <button id="open_folder_modal_infos" class="btn_folders">
+                    <img src="./src/imgs/icon_app_folder.webp" alt="">
+                    Informations
+                </button>
+                <button id="open_folder_modal_career" class="btn_folders">
+                    <img src="./src/imgs/icon_app_folder.webp" alt="">
+                    Parcours
+                </button>
+                <button id="open_folder_modal_projects" class="btn_folders">
+                    <img src="./src/imgs/icon_app_folder.webp" alt="">
+                    Projets
+                </button>
+                <button id="open_folder_modal_contact" class="btn_folders">
+                    <img src="./src/imgs/icon_app_folder.webp" alt="">
+                    Contact
+                </button>
             </section>
     
             <section id="taskbar">
                 <section id="taskbar_left">
-                    <img class="icon_windows" src="./src/imgs/windows.webp" alt="">
+                    <img id="open_modal_windows" class="icon_windows" src="./src/imgs/windows.webp" alt="">
                     <div class="research">
                         <img class="icon_magnifying_glass" src="./src/imgs/icon_magnifying_glass.png" alt="">
                         <p>Rechercher</p>
@@ -223,7 +236,25 @@
             </section>
         </section>
 
+        <section id="modal_windows" class="modal_windows">
+            <section class="modal_content">
+                <div class="modal_content_top">
+
+                </div>
+                <div class="modal_content_bottom">
+                    <div class="profile">
+                        <img src="./src/imgs/profile_picture.webp" alt="">
+                        <p>Basile ALEVEQUE-DESSOLIN</p>
+                    </div>
+                    <div id="disconnect_button" class="power">
+                        <img src="./src/imgs/icon_power.png" alt="">
+                    </div>
+                </div>
+            </section>
+        </section>
+
         <script src="./src/js/update_time-min.js"></script>
         <script src="./src/js/modals-min.js"></script>
+        <script src="./src/js/disconnect_button-min.js"></script>
     </body>
 </html>
