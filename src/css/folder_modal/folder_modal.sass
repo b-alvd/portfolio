@@ -98,6 +98,7 @@
             align-items: center
             background-color: #3a3a3a
             cursor: default
+            border-bottom: 3px solid white
             .access_path_left
                 display: flex
                 align-items: center
@@ -144,3 +145,58 @@
                 color: white
                 img
                     width: 20px
+        #content_files
+            display: flex
+            #tree_structure
+                width: 15%
+                height: 63vh
+                border-bottom-left-radius: 10px
+                background-color: #272727
+                cursor: default
+                .access_path
+                    #separator
+                        width: 9vw
+                        height: 1px
+                        margin: 2vh auto
+                        background-color: #4b4b4b
+                    p
+                        display: flex
+                        align-items: center
+                        margin: 0
+                        padding: 5px 0
+                        color: white
+                        font-size: 12px
+                        transition: all ease-in-out 0.2s
+                        .icons
+                            width: 20px
+                            margin-right: 0.5vw
+                        .arrows
+                            width: 8px
+                            margin-left: 1vw
+                            margin-right: 0.5vw
+                    p:hover
+                        background-color: #4b4b4b
+                    .home
+                        margin-top: 2vh
+                        padding-left: 2vw
+                    .to_right
+                        padding-left: 0.5vw
+            #files
+                display: flex
+                .btn_files
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    max-height: 14vh
+                    padding: 5px 20px
+                    margin: 10px
+                    border: none
+                    border-radius: 5px
+                    background-color: inherit
+                    color: white
+                    transition: all ease-in-out 0.2s
+                    img
+                        width: 80px
+                        margin-bottom: 1vh
+                .btn_files:hover
+                    background-color: #6666667e

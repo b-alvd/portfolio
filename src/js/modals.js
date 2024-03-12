@@ -13,25 +13,25 @@ closeButton2.forEach(function(closeButton) {
     }
 })
 
-// INFOS
+// FOLDER - INFOS
 var modal_infos = document.getElementById("folder_modal_infos");
 var btn = document.getElementById("open_folder_modal_infos");
 btn.onclick = function() {
     modal_infos.style.display = "block";
 }
-// CAREER
+// FOLDER - CAREER
 var modal_career = document.getElementById("folder_modal_career");
 var btn = document.getElementById("open_folder_modal_career");
 btn.onclick = function() {
     modal_career.style.display = "block";
 }
-// PROJECTS
+// FOLDER - PROJECTS
 var modal_projects = document.getElementById("folder_modal_projects");
 var btn = document.getElementById("open_folder_modal_projects");
 btn.onclick = function() {
     modal_projects.style.display = "block";
 }
-// CONTACT
+// FOLDER - CONTACT
 var modal_contact = document.getElementById("folder_modal_contact");
 var btn = document.getElementById("open_folder_modal_contact");
 btn.onclick = function() {
@@ -49,4 +49,11 @@ window.onclick = function(event) {
     if (event.target == modal_windows) {
         modal_windows.style.display = "none";
     }
+}
+
+// NOTEPAD - INFOS
+var modal_notepad_infos = document.getElementById("modal_notepad_infos");
+var btn = document.getElementById("open_modal_notepad_infos");
+btn.onclick = function() {
+    modal_notepad_infos.style.display = "block";
 }

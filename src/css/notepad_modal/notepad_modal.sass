@@ -1,0 +1,99 @@
+.modal
+    display: none
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    overflow: auto
+    .modal_content
+        background-color: #303030
+        margin: 5% auto
+        border: 1px solid #bebebe
+        border-radius: 10px
+        width: 80%
+        height: 75vh
+        box-shadow: #000 0px 0px 50px
+        nav
+            display: flex
+            align-items: center
+            justify-content: space-between
+            width: 100%
+            height: 5vh
+            background-color: #1f1f1f
+            border-radius: 10px 10px 0px 0px
+            .icon_app_notepad
+                width: 30px
+                margin-left: 0.5vw
+            #tabs
+                display: flex
+                .tab
+                    display: flex
+                    align-items: center
+                    justify-content: space-between
+                    padding: 0 5px 0 10px
+                    margin: 1vh 0.5vw 0 0.5vw
+                    background-color: #303030
+                    border-top-left-radius: 10px
+                    border-top-right-radius: 10px
+                    .tab_left
+                        display: flex
+                        align-items: center
+                        img
+                            width: 20px
+                            height: 20px
+                            margin-right: 0.5vw
+                        p
+                            font-size: 11.5px
+                            letter-spacing: 0.5px
+                            color: white
+                    .cross_tab
+                        padding: 5px 14px
+                        border-radius: 5px
+                        font-size: 11px
+                        margin-left: 2vw
+                        color: white
+                        transition: all ease-in-out 0.1s
+                    .cross_tab:hover
+                        background-color: #585858
+                        cursor: default
+            .tab_plus
+                padding: 0.5vh 0.5vw
+                border-radius: 5px
+                margin: 0.8vh auto 0 0
+                color: white
+                transition: all ease-in-out 0.1s
+            .tab_plus:hover
+                background-color: #4b4b4b
+                cursor: default
+            #btn_right
+                display: flex
+                .btn_right_cross
+                    display: flex
+                    align-content: center
+                    justify-content: center
+                    padding: 14px 20px
+                    color: grey
+                    font-size: 15px
+                    border-top-right-radius: 10px
+                    transition: all ease-in-out 0.2s
+                .btn_right_cross:hover
+                    background-color: red
+                    color: white
+                    cursor: default
+                .btn_right_other
+                    display: flex
+                    align-content: center
+                    justify-content: center
+                    padding: 12px 20px
+                    color: grey
+                    font-size: 15px
+                    transition: all ease-in-out 0.2s
+                .btn_right_other:hover
+                    background-color: #4b4b4b
+                    color: white
+                    cursor: default
+        #params
+            width: 100%
+            height: 4vh
+            background-color: red

@@ -115,6 +115,7 @@
   align-items: center;
   background-color: #3a3a3a;
   cursor: default;
+  border-bottom: 3px solid white;
 }
 .modal .modal_content #access_path .access_path_left {
   display: flex;
@@ -170,4 +171,71 @@
 }
 .modal .modal_content #access_path .access_path_right img {
   width: 20px;
+}
+.modal .modal_content #content_files {
+  display: flex;
+}
+.modal .modal_content #content_files #tree_structure {
+  width: 15%;
+  height: 63vh;
+  border-bottom-left-radius: 10px;
+  background-color: #272727;
+  cursor: default;
+}
+.modal .modal_content #content_files #tree_structure .access_path #separator {
+  width: 9vw;
+  height: 1px;
+  margin: 2vh auto;
+  background-color: #4b4b4b;
+}
+.modal .modal_content #content_files #tree_structure .access_path p {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 5px 0;
+  color: white;
+  font-size: 12px;
+  transition: all ease-in-out 0.2s;
+}
+.modal .modal_content #content_files #tree_structure .access_path p .icons {
+  width: 20px;
+  margin-right: 0.5vw;
+}
+.modal .modal_content #content_files #tree_structure .access_path p .arrows {
+  width: 8px;
+  margin-left: 1vw;
+  margin-right: 0.5vw;
+}
+.modal .modal_content #content_files #tree_structure .access_path p:hover {
+  background-color: #4b4b4b;
+}
+.modal .modal_content #content_files #tree_structure .access_path .home {
+  margin-top: 2vh;
+  padding-left: 2vw;
+}
+.modal .modal_content #content_files #tree_structure .access_path .to_right {
+  padding-left: 0.5vw;
+}
+.modal .modal_content #content_files #files {
+  display: flex;
+}
+.modal .modal_content #content_files #files .btn_files {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 14vh;
+  padding: 5px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: inherit;
+  color: white;
+  transition: all ease-in-out 0.2s;
+}
+.modal .modal_content #content_files #files .btn_files img {
+  width: 80px;
+  margin-bottom: 1vh;
+}
+.modal .modal_content #content_files #files .btn_files:hover {
+  background-color: rgba(102, 102, 102, 0.4941176471);
 }/*# sourceMappingURL=folder_modal.css.map */
