@@ -2,7 +2,7 @@
 @import _global
 
 header
-    background-color: red
+    background-color: $secondary_bg_color
     display: flex
     justify-content: space-between
     padding: 10px 20px
@@ -21,10 +21,27 @@ header
                 border-radius: 2px
                 transition: all ease-in-out 0.3s
         div.header_burger_button--active div.header_burger_button_bar:nth-child(1)
-            transform: translateY(7px) rotate(45deg)
+            transform: translateY(7px) rotate(-45deg)
         div.header_burger_button--active div.header_burger_button_bar:nth-child(2)
             opacity: 0
         div.header_burger_button--active div.header_burger_button_bar:nth-child(3)
-            transform: translateY(-7px) rotate(-45deg)
+            transform: translateY(-7px) rotate(45deg)
         nav
-            display: none
+            ul
+                display: none
+                padding: 0
+                list-style: none
+                left: 0
+            .ul--open
+                position: absolute
+                display: block
+                text-align: center
+                top: 5.5vh
+                width: 100vw
+                background-color: $secondary_bg_color
+                border-top: 2px solid $white
+                li
+                    padding: 20px 0
+                    a
+                        text-decoration: none
+                        color: $white
