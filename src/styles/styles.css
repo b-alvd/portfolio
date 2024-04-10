@@ -17,12 +17,22 @@ header section#header_nav {
   align-items: center;
   justify-content: center;
 }
-header section#header_nav div#header_burger_button div.header_burger_button_bar {
-  width: 20px;
+header section#header_nav div.header_burger_button div.header_burger_button_bar {
+  width: 25px;
   height: 2px;
   background-color: #fff;
+  margin: 5px 0;
   border-radius: 2px;
-  margin: 4px 0;
+  transition: all ease-in-out 0.3s;
+}
+header section#header_nav div.header_burger_button--active div.header_burger_button_bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+header section#header_nav div.header_burger_button--active div.header_burger_button_bar:nth-child(2) {
+  opacity: 0;
+}
+header section#header_nav div.header_burger_button--active div.header_burger_button_bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
 }
 header section#header_nav nav {
   display: none;
