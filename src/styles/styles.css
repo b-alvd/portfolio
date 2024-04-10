@@ -1,0 +1,29 @@
+body {
+  background-color: #333;
+  margin: 0;
+}
+
+header {
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+header section#header_logo img {
+  width: 50%;
+}
+header section#header_nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header section#header_nav div#header_burger_button div.header_burger_button_bar {
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 2px;
+  margin: 4px 0;
+}
+header section#header_nav nav {
+  display: none;
+}/*# sourceMappingURL=styles.css.map */
