@@ -37,24 +37,24 @@ header section#header_nav div.header_burger_button--active div.header_burger_but
   transform: translateY(-7px) rotate(45deg);
 }
 header section#header_nav nav ul {
-  display: none;
+  position: absolute;
   padding: 0;
   list-style: none;
-  left: 0;
-}
-header section#header_nav nav .ul--open {
-  position: absolute;
-  display: block;
-  text-align: center;
-  top: 5.5vh;
   width: 100vw;
+  left: -53.5vh;
+  top: 5.5vh;
+  text-align: center;
   background-color: #3a3a3a;
   border-top: 2px solid #fff;
+  transition: 1s ease-in-out all;
 }
-header section#header_nav nav .ul--open li {
+header section#header_nav nav .ul--open {
+  left: 0;
+}
+header section#header_nav nav li {
   padding: 20px 0;
 }
-header section#header_nav nav .ul--open li a {
+header section#header_nav nav li a {
   text-decoration: none;
   color: #fff;
 }/*# sourceMappingURL=styles.css.map */

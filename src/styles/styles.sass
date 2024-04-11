@@ -28,20 +28,20 @@ header
             transform: translateY(-7px) rotate(45deg)
         nav
             ul
-                display: none
+                position: absolute
                 padding: 0
                 list-style: none
-                left: 0
-            .ul--open
-                position: absolute
-                display: block
-                text-align: center
-                top: 5.5vh
                 width: 100vw
+                left: -53.5vh
+                top: 5.5vh
+                text-align: center
                 background-color: $secondary_bg_color
                 border-top: 2px solid $white
-                li
-                    padding: 20px 0
-                    a
-                        text-decoration: none
-                        color: $white
+                transition: 1s ease-in-out all
+            .ul--open
+                left: 0
+            li
+                padding: 20px 0
+                a
+                    text-decoration: none
+                    color: $white
