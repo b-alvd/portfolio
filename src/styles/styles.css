@@ -46,7 +46,7 @@ header section#header_nav nav ul {
   text-align: center;
   background-color: #3a3a3a;
   border-top: 2px solid #fff;
-  transition: 1s ease-in-out all;
+  transition: left 1s ease-in-out;
 }
 header section#header_nav nav .ul--open {
   left: 0;
