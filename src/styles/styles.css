@@ -5,21 +5,30 @@ body {
   background-color: #333;
 }
 
+@keyframes header_logo {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
 header {
   background-color: #3a3a3a;
   display: flex;
   justify-content: space-between;
   padding: 10px 20px;
 }
-header section#header_logo img {
-  width: 50%;
+header #header_logo {
+  width: 30px;
+  animation: header_logo 5s linear infinite;
 }
-header section#header_nav {
+header #header_nav {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-header section#header_nav div.header_burger_button div.header_burger_button_bar {
+header #header_nav .header_burger_button .header_burger_button_bar {
   width: 25px;
   height: 2px;
   background-color: #fff;
@@ -27,16 +36,16 @@ header section#header_nav div.header_burger_button div.header_burger_button_bar 
   border-radius: 2px;
   transition: all ease-in-out 0.3s;
 }
-header section#header_nav div.header_burger_button--active div.header_burger_button_bar:nth-child(1) {
+header #header_nav .header_burger_button--active .header_burger_button_bar:nth-child(1) {
   transform: translateY(7px) rotate(-45deg);
 }
-header section#header_nav div.header_burger_button--active div.header_burger_button_bar:nth-child(2) {
+header #header_nav .header_burger_button--active .header_burger_button_bar:nth-child(2) {
   opacity: 0;
 }
-header section#header_nav div.header_burger_button--active div.header_burger_button_bar:nth-child(3) {
+header #header_nav .header_burger_button--active .header_burger_button_bar:nth-child(3) {
   transform: translateY(-7px) rotate(45deg);
 }
-header section#header_nav nav ul {
+header #header_nav nav ul {
   position: absolute;
   padding: 0;
   list-style: none;
@@ -48,13 +57,13 @@ header section#header_nav nav ul {
   border-top: 2px solid #fff;
   transition: left 1s ease-in-out;
 }
-header section#header_nav nav .ul--open {
+header #header_nav nav .ul--open {
   left: 0;
 }
-header section#header_nav nav li {
+header #header_nav nav li {
   padding: 20px 0;
 }
-header section#header_nav nav li a {
+header #header_nav nav li a {
   text-decoration: none;
   color: #fff;
 }/*# sourceMappingURL=styles.css.map */

@@ -1,30 +1,32 @@
 @import _variables
 @import _global
+@import _keyframes
 
 header
     background-color: $secondary_bg_color
     display: flex
     justify-content: space-between
     padding: 10px 20px
-    section#header_logo img
-        width: 50%
-    section#header_nav
+    #header_logo
+        width: 30px
+        animation: header_logo 5s linear infinite
+    #header_nav
         display: flex
         align-items: center
         justify-content: center
-        div.header_burger_button
-            div.header_burger_button_bar
+        .header_burger_button
+            .header_burger_button_bar
                 width: 25px
                 height: 2px
                 background-color: $white
                 margin: 5px 0
                 border-radius: 2px
                 transition: all ease-in-out 0.3s
-        div.header_burger_button--active div.header_burger_button_bar:nth-child(1)
+        .header_burger_button--active .header_burger_button_bar:nth-child(1)
             transform: translateY(7px) rotate(-45deg)
-        div.header_burger_button--active div.header_burger_button_bar:nth-child(2)
+        .header_burger_button--active .header_burger_button_bar:nth-child(2)
             opacity: 0
-        div.header_burger_button--active div.header_burger_button_bar:nth-child(3)
+        .header_burger_button--active .header_burger_button_bar:nth-child(3)
             transform: translateY(-7px) rotate(45deg)
         nav
             ul
