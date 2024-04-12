@@ -5,6 +5,10 @@ body {
   background-color: #333;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+  color: white;
+}
+
 @keyframes header_logo {
   from {
     transform: rotateX(0deg) rotateY(0deg);
@@ -66,4 +70,26 @@ header #header_nav nav li {
 header #header_nav nav li a {
   text-decoration: none;
   color: #fff;
+}
+
+main #home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main #home .home_texts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 9.2vh 0;
+}
+main #home .home_texts h1 {
+  font-size: 20px;
+}
+main #home .home_texts p {
+  text-align: center;
+  font-size: 15px;
+}
+main #home #profile_photo {
+  width: 100vw;
 }/*# sourceMappingURL=styles.css.map */
