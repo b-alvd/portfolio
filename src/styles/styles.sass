@@ -3,10 +3,12 @@
 @import _keyframes
 
 header
-    background-color: $secondary_bg_color
     display: flex
     justify-content: space-between
+    position: sticky
+    top: 0
     padding: 10px 20px
+    background-color: $secondary_bg_color
     #header_logo
         width: 30px
         animation: header_logo 5s linear infinite
@@ -71,6 +73,7 @@ main
         align-items: center
         justify-content: center
         margin-top: 2.7vh
+        scroll-margin-top: 40px
         .presentation_texts
             text-align: center
             font-size: 15px

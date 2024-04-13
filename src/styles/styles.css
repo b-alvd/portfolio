@@ -35,10 +35,12 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 header {
-  background-color: #3a3a3a;
   display: flex;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
   padding: 10px 20px;
+  background-color: #3a3a3a;
 }
 header #header_logo {
   width: 30px;
@@ -117,6 +119,7 @@ main #presentation {
   align-items: center;
   justify-content: center;
   margin-top: 2.7vh;
+  scroll-margin-top: 40px;
 }
 main #presentation .presentation_texts {
   text-align: center;
