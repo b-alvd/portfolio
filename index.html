@@ -21,7 +21,7 @@
                     <ul>
                         <li><a href="#home" onclick="nav_menu_open()">Accueil</a></li>
                         <li><a href="#presentation" onclick="nav_menu_open()">Présentation</a></li>
-                        <li><a href="" onclick="nav_menu_open()">Projets</a></li>
+                        <li><a href="#projects" onclick="nav_menu_open()">Projets</a></li>
                         <li><a href="" onclick="nav_menu_open()">Contact</a></li>
                     </ul>
                 </nav>
@@ -84,9 +84,47 @@
                     </div>
                 </div>
             </section>
+            <section id="projects">
+                <div class="carousel_projects">
+                    <div class="carousel_container">
+                        <div class="carousel_item">
+                            <img class="project_img" src="./src/assets/project_pep.webp" alt="">
+                            <div class="carousel_item_content">
+                                <h2>Site pour Pix&Pulse</h2>
+                                <p>Pix&Pulse est la société que j'espère lancer après ma formation.</p>
+                                <h3>Langages : </h3>
+                                <img src="./src/assets/icons/html.png" alt="">
+                                <img src="./src/assets/icons/sass.png" alt="">
+                                <img src="./src/assets/icons/css.png" alt="">
+                                <img src="./src/assets/icons/js.png" alt="">
+                                <img src="./src/assets/icons/php.png" alt="">
+                            </div>
+                            <a href="projects.html">En savoir plus...</a>
+                        </div>
+                        <div class="carousel_item">
+                            <h1>A venir...</h1>
+                        </div>
+                        <div class="carousel_item">
+                            <h1>A venir...</h1>
+                        </div>
+                        <div class="carousel_item">
+                            <h1>A venir...</h1>
+                        </div>
+                        <div class="carousel_item">
+                            <h1>A venir...</h1>
+                        </div>
+                    </div>
+                    <div class="carousel_buttons">
+                        <button class="prev_project"> < </button>
+                        <span class="project_counter"></span>
+                        <button class="next_project"> > </button>
+                    </div>
+                </div>
+            </section>
         </main>
         <footer></footer>
 
         <script src="./src/scripts/header_menu.js"></script>
+        <script src="./src/scripts/carousel_projects.js"></script>
     </body>
 </html>
