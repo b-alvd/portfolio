@@ -32,7 +32,6 @@ header
             ul
                 position: absolute
                 padding: 0
-                list-style: none
                 width: 100vw
                 left: -53.5vh
                 top: 5.5vh
@@ -66,3 +65,68 @@ main
         #profile_photo
             width: 70vw
             margin: 4.1vh 0
+    #presentation
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        margin-top: 2.7vh
+        .presentation_texts
+            text-align: center
+            font-size: 15px
+            padding: 20px
+            padding-bottom: 20vh
+            background-color: $orange
+        #presentation_infos
+            display: flex
+            flex-direction: column
+            align-items: center
+            padding: 50px 10px
+            width: 85vw
+            margin-top: -15vh
+            background-color: $secondary_bg_color
+            border-radius: 10px
+            img
+                width: 100px
+                border: 1px solid white
+                border-radius: 100px
+            h2
+                font-size: 20px
+                text-align: center
+            h3
+                text-decoration: underline 3px $orange
+            p
+                text-align: center
+                margin: 0
+            .career
+                display: flex
+                justify-content: center
+                align-content: center
+                .career_list
+                    position: relative
+                    margin: 0
+                    &::before
+                        content: ''
+                        position: absolute
+                        height: 100%
+                        width: 0.5vw
+                        background-color: $white
+                    .career_item
+                        display: flex
+                        padding: 20px 0
+                        &::before
+                            content: ''
+                            display: block
+                            z-index: 1
+                            width: 15px
+                            height: 15px
+                            margin-left: -2vw
+                            border-radius: 50px
+                            background-color: $orange
+                        ul
+                            padding: 0 10px
+                            margin-top: -0.8vh
+                            li
+                                color: $white
+                                &:first-child
+                                    font-weight: bold
