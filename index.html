@@ -22,7 +22,7 @@
                         <li><a href="#home" onclick="nav_menu_open()">Accueil</a></li>
                         <li><a href="#presentation" onclick="nav_menu_open()">Présentation</a></li>
                         <li><a href="#projects" onclick="nav_menu_open()">Projets</a></li>
-                        <li><a href="" onclick="nav_menu_open()">Contact</a></li>
+                        <li><a href="#contact" onclick="nav_menu_open()">Contact</a></li>
                     </ul>
                 </nav>
             </section>
@@ -121,10 +121,27 @@
                     <button onclick="window.location='projects.html'">Plus de projets...</button>
                 </div>
             </section>
+            <section id="contact">
+                <p></p>
+                <form id="discordForm">
+                    <label for="nom">Nom & Prénom :</label>
+                    <input type="text" id="nom" name="nom" required>
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="tel">Téléphone :</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <label for="society">Entreprise :</label>
+                    <input type="text" id="society" name="society" placeholder="Optionnel">
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Envoyer</button>
+                </form>
+            </section>
         </main>
         <footer></footer>
 
         <script src="./src/scripts/header_menu.js"></script>
         <script src="./src/scripts/carousel_projects.js"></script>
+        <script src="./src/scripts/contact_form.js"></script>
     </body>
 </html>

@@ -273,6 +273,41 @@ main #projects .carousel_projects button {
   border: none;
   border-radius: 5px;
 }
+main #contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+main #contact form {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  background-color: #3a3a3a;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+main #contact form label {
+  margin: 10px 0 5px 0;
+  color: #fff;
+}
+main #contact form input[type=text], main #contact form input[type=email], main #contact form input[type=tel], main #contact form textarea {
+  padding: 5px;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+main #contact form button[type=submit] {
+  padding: 10px 20px;
+  background-color: #ff8a00;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+main #contact form button {
+  margin: 20px 0;
+}
 
 main #projects .project_container {
   display: grid;
