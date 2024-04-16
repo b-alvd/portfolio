@@ -18,6 +18,10 @@ h1, h2, h3, h4, h5, h6, p {
   color: white;
 }
 
+p {
+  margin: 0;
+}
+
 .presentation_separator {
   width: 65vw;
   height: 0.5vh;
@@ -306,6 +310,16 @@ main #contact form button[type=submit] {
 }
 main #contact form button {
   margin: 20px 0;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #3a3a3a;
+  border-top: 2px solid #fff;
+}
+footer p {
+  font-size: 13px;
 }
 
 main #projects .project_container {
