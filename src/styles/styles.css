@@ -99,16 +99,17 @@ main #home {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 6vh 0;
+  justify-content: center;
+  height: 100vh;
 }
 main #home .home_texts {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 4.1vh 0;
 }
 main #home .home_texts h1 {
   font-size: 20px;
+  margin-top: -8vh;
 }
 main #home .home_texts p {
   text-align: center;
@@ -116,7 +117,7 @@ main #home .home_texts p {
 }
 main #home #profile_photo {
   width: 70vw;
-  margin: 4.1vh 0;
+  margin-top: 4.1vh;
 }
 main #presentation {
   display: flex;
@@ -206,7 +207,7 @@ main #projects {
   justify-content: center;
   text-align: center;
   padding: 20px;
-  scroll-margin-top: 30px;
+  scroll-margin-top: 50px;
 }
 main #projects .carousel_projects {
   overflow: hidden;
@@ -283,6 +284,7 @@ main #contact {
   justify-content: center;
   text-align: center;
   padding: 20px;
+  scroll-margin-top: 50px;
 }
 main #contact form {
   display: flex;
