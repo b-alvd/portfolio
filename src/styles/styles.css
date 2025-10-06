@@ -76,9 +76,10 @@ header #header_nav .header_burger_button--active .header_burger_button_bar:nth-c
 header #header_nav nav ul {
   position: absolute;
   padding: 0;
+  margin: 0;
   width: 100vw;
-  left: -53.5vh;
-  top: 5.5vh;
+  left: -58vh;
+  top: 6.5vh;
   text-align: center;
   background-color: #3a3a3a;
   border-top: 2px solid #fff;
@@ -156,6 +157,7 @@ main #presentation #presentation_infos h2 {
 main #presentation #presentation_infos h3 {
   -webkit-text-decoration: underline 3px #ff8a00;
           text-decoration: underline 3px #ff8a00;
+  text-align: center;
 }
 main #presentation #presentation_infos p {
   text-align: center;
@@ -187,7 +189,7 @@ main #presentation #presentation_infos .career .career_list .career_item::before
   z-index: 1;
   width: 15px;
   height: 15px;
-  margin-left: -2vw;
+  margin-left: -1.6vw;
   border-radius: 50px;
   background-color: #ff8a00;
 }
@@ -242,6 +244,13 @@ main #projects .carousel_projects .carousel_container .carousel_item .carousel_i
 }
 main #projects .carousel_projects .carousel_container .carousel_item .carousel_item_content p {
   font-size: 16px;
+}
+main #projects .carousel_projects .carousel_container .carousel_item .carousel_item_content p a {
+  color: #ff8a00;
+  text-decoration: none;
+}
+main #projects .carousel_projects .carousel_container .carousel_item .carousel_item_content p a:hover {
+  text-decoration: underline;
 }
 main #projects .carousel_projects .carousel_container .carousel_item .carousel_item_content h3 {
   font-size: 18px;
@@ -354,6 +363,13 @@ main #projects .project_container .project .project_content h2 {
 main #projects .project_container .project .project_content p {
   font-size: 16px;
 }
+main #projects .project_container .project .project_content p a {
+  color: #ff8a00;
+  text-decoration: none;
+}
+main #projects .project_container .project .project_content p a:hover {
+  text-decoration: underline;
+}
 main #projects .project_container .project .project_content h3 {
   font-size: 18px;
   -webkit-text-decoration: underline 2px #ff8a00;
@@ -363,4 +379,169 @@ main #projects .project_container .project .project_content h3 {
 main #projects .project_container .project .project_content img {
   width: 20px;
   margin: 10px;
+}
+
+@media (min-width: 768px) {
+  header {
+    padding: 15px 40px;
+  }
+  header #header_logo {
+    width: 40px;
+  }
+  header #header_nav .header_burger_button {
+    display: none;
+  }
+  header #header_nav nav ul {
+    position: static;
+    display: flex;
+    justify-content: flex-end;
+    width: auto;
+    border-top: none;
+    background-color: transparent;
+  }
+  header #header_nav nav ul li {
+    padding: 0 15px;
+  }
+  header #header_nav nav ul li a {
+    color: #fff;
+    font-size: 16px;
+  }
+  main #home {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  main #home .home_texts h1 {
+    font-size: 28px;
+  }
+  main #home .home_texts p {
+    font-size: 18px;
+  }
+  main #home #profile_photo {
+    width: 40vw;
+  }
+  main #presentation {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  main #presentation .presentation_texts {
+    width: 45%;
+    font-size: 17px;
+    padding: 40px;
+  }
+  main #presentation #presentation_infos {
+    width: 45%;
+    margin-top: 0;
+  }
+  main #projects {
+    padding: 40px;
+  }
+  main #projects .carousel_projects .carousel_item {
+    flex-direction: row;
+  }
+  main #projects .carousel_projects .carousel_item .project_img {
+    width: 50%;
+    height: auto;
+  }
+  main #projects .carousel_projects .carousel_item .carousel_item_content {
+    width: 50%;
+    padding: 20px;
+  }
+  main #contact form {
+    width: 60%;
+  }
+  main #contact form input, main #contact form textarea {
+    font-size: 16px;
+  }
+  footer p {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1024px) {
+  header {
+    padding: 20px 80px;
+  }
+  header #header_logo {
+    width: 50px;
+  }
+  header #header_nav nav ul li a {
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  header #header_nav nav ul li a:hover {
+    color: #ff8a00;
+  }
+  main #home {
+    height: 81vh;
+  }
+  main #home h1 {
+    font-size: 36px;
+  }
+  main #home p {
+    font-size: 20px;
+  }
+  main #home #profile_photo {
+    width: 25vw;
+  }
+  main #presentation {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+  }
+  main #presentation .presentation_texts {
+    width: 93.5%;
+    font-size: 18px;
+    padding: 60px;
+  }
+  main #presentation .presentation_texts h2 {
+    margin-top: -3vh;
+  }
+  main #presentation .presentation_texts p {
+    padding: 0 20vw;
+  }
+  main #presentation #presentation_infos {
+    display: grid;
+    grid-template-columns: 1fr 50px 1fr;
+    margin-top: -20px;
+    width: 80%;
+    padding: 50px;
+  }
+  main #presentation #presentation_infos .presentation_separator {
+    transform: rotate(90deg);
+    width: 15vw;
+    margin: 0;
+    margin-left: -3vw;
+  }
+  main #presentation #presentation_infos .presentation_info1, main #presentation #presentation_infos .presentation_info2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main #presentation #presentation_infos .presentation_info1 .career .career_list::before, main #presentation #presentation_infos .presentation_info2 .career .career_list::before {
+    width: 0.15vw;
+    margin-left: -1.25vw;
+  }
+  main #projects .carousel_projects .carousel_item .project_img {
+    height: 300px;
+  }
+  main #projects .carousel_projects .carousel_item .carousel_item_content h2 {
+    font-size: 24px;
+  }
+  main #projects .carousel_projects .carousel_item .carousel_item_content p {
+    font-size: 18px;
+  }
+  main #projects .carousel_buttons button {
+    padding: 12px 25px;
+  }
+  main #contact form {
+    width: 40%;
+    padding: 40px;
+  }
+  main #contact form button {
+    font-size: 16px;
+    padding: 12px 25px;
+  }
+  footer p {
+    font-size: 15px;
+  }
 }/*# sourceMappingURL=styles.css.map */

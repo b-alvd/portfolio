@@ -35,9 +35,10 @@ header
             ul
                 position: absolute
                 padding: 0
+                margin: 0
                 width: 100vw
-                left: -53.5vh
-                top: 5.5vh
+                left: -58vh
+                top: 6.5vh
                 text-align: center
                 background-color: $secondary_bg_color
                 border-top: 2px solid $white
@@ -100,6 +101,7 @@ main
                 text-align: center
             h3
                 text-decoration: underline 3px $orange
+                text-align: center
             p
                 text-align: center
                 margin: 0
@@ -125,7 +127,7 @@ main
                             z-index: 1
                             width: 15px
                             height: 15px
-                            margin-left: -2vw
+                            margin-left: -1.6vw
                             border-radius: 50px
                             background-color: $orange
                         ul
@@ -168,6 +170,11 @@ main
                             text-decoration: underline 2px $orange
                         p
                             font-size: 16px
+                            a
+                                color: $orange
+                                text-decoration: none
+                                &:hover
+                                    text-decoration: underline
                         h3
                             font-size: 18px
                             text-decoration: underline 2px $orange
@@ -260,6 +267,11 @@ main
                         text-decoration: underline 2px $orange
                     p
                         font-size: 16px
+                        a
+                            color: $orange
+                            text-decoration: none
+                            &:hover
+                                text-decoration: underline
                     h3
                         font-size: 18px
                         text-decoration: underline 2px $orange
@@ -267,3 +279,144 @@ main
                     img
                         width: 20px
                         margin: 10px
+
+@media (min-width: 768px)
+    header
+        padding: 15px 40px
+        #header_logo
+            width: 40px
+        #header_nav
+            .header_burger_button
+                display: none
+            nav
+                ul
+                    position: static
+                    display: flex
+                    justify-content: flex-end
+                    width: auto
+                    border-top: none
+                    background-color: transparent
+                    li
+                        padding: 0 15px
+                        a
+                            color: $white
+                            font-size: 16px
+    main
+        #home
+            flex-direction: row
+            justify-content: space-around
+            .home_texts
+                h1
+                    font-size: 28px
+                p
+                    font-size: 18px
+            #profile_photo
+                width: 40vw
+        #presentation
+            flex-direction: row
+            justify-content: space-between
+            align-items: flex-start
+            .presentation_texts
+                width: 45%
+                font-size: 17px
+                padding: 40px
+            #presentation_infos
+                width: 45%
+                margin-top: 0
+        #projects
+            padding: 40px
+            .carousel_projects
+                .carousel_item
+                    flex-direction: row
+                    .project_img
+                        width: 50%
+                        height: auto
+                    .carousel_item_content
+                        width: 50%
+                        padding: 20px
+        #contact
+            form
+                width: 60%
+                input, textarea
+                    font-size: 16px
+    footer
+        p
+            font-size: 14px
+
+@media (min-width: 1024px)
+    header
+        padding: 20px 80px
+        #header_logo
+            width: 50px
+        #header_nav
+            nav
+                ul
+                    li a
+                        font-size: 18px
+                        transition: color 0.3s ease
+                        &:hover
+                            color: $orange
+    main
+        #home
+            height: 81vh
+            h1
+                font-size: 36px
+            p
+                font-size: 20px
+            #profile_photo
+                width: 25vw
+        #presentation
+            flex-direction: column
+            align-items: center
+            margin-top: 10vh
+            .presentation_texts
+                width: 93.5%
+                font-size: 18px
+                padding: 60px
+                h2
+                    margin-top: -3vh
+                p
+                    padding: 0 20vw
+            #presentation_infos
+                display: grid
+                grid-template-columns: 1fr 50px 1fr
+                margin-top: -20px
+                width: 80%
+                padding: 50px
+                .presentation_separator
+                    transform: rotate(90deg)
+                    width: 15vw
+                    margin: 0
+                    margin-left: -3vw
+                .presentation_info1, .presentation_info2
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    .career
+                        .career_list
+                            &::before
+                                width: 0.15vw
+                                margin-left: -1.25vw
+        #projects
+            .carousel_projects
+                .carousel_item
+                    .project_img
+                        height: 300px
+                    .carousel_item_content
+                        h2
+                            font-size: 24px
+                        p
+                            font-size: 18px
+            .carousel_buttons
+                button
+                    padding: 12px 25px
+        #contact
+            form
+                width: 40%
+                padding: 40px
+                button
+                    font-size: 16px
+                    padding: 12px 25px
+    footer
+        p
+            font-size: 15px
