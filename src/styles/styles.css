@@ -147,8 +147,7 @@ main #presentation #presentation_infos {
 }
 main #presentation #presentation_infos img {
   width: 100px;
-  border: 1px solid white;
-  border-radius: 100px;
+  transform: translateX(120%);
 }
 main #presentation #presentation_infos h2 {
   font-size: 20px;
