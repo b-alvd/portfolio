@@ -88,49 +88,71 @@
                     </div>
                 </div>
             </section>
-            <section id="projects">
-                <div class="carousel_projects">
-                    <div class="carousel_container">
-                        <div class="carousel_item">
-                            <img class="project_img" src="./src/assets/project_chillkids.webp" alt="">
-                            <div class="carousel_item_content">
-                                <h2>Chill & Kids</h2>
-                                <p>Chill & Kids est un parc de jeux pour enfants à Crolles. <a href="https://chillkids.fr/" target="_blank">Visiter le site</a></p>
-                                <h3>Langages/Frameworks/CMS: </h3>
-                                <img src="./src/assets/icons/wordpress.png" alt="">
+            <section id="projects_contact">
+                <section id="projects">
+                    <div class="carousel_projects">
+                        <div class="carousel_container">
+                            <div class="carousel_item">
+                                <img class="project_img" src="./src/assets/project_chillkids.webp" alt="">
+                                <div class="carousel_item_content">
+                                    <h2>Chill & Kids</h2>
+                                    <p>Chill & Kids est un parc de jeux pour enfants à Crolles. <a href="https://chillkids.fr/" target="_blank">Visiter le site</a></p>
+                                    <h3>Langages/Frameworks/CMS: </h3>
+                                    <img src="./src/assets/icons/wordpress.png" alt="">
+                                </div>
+                            </div>
+                            <div class="carousel_item">
+                                <img class="project_img" src="./src/assets/project_dauphine.webp" alt="">
+                                <div class="carousel_item_content">
+                                    <h2>Le Dauphiné</h2>
+                                    <p>Projet fictif: Journal en ligne. <a href="https://github.com/b-alvd/journal-dauphine-php" target="_blank">Répo Github</a></p>
+                                    <h3>Langages/Frameworks/CMS: </h3>
+                                    <img src="./src/assets/icons/php.png" alt="">
+                                    <img src="./src/assets/icons/html.png" alt="">
+                                    <img src="./src/assets/icons/css.png" alt="">
+                                    <img src="./src/assets/icons/sql.png" alt="">
+                                </div>
+                            </div>
+                            <div class="carousel_item">
+                                <img class="project_img" src="./src/assets/project_pulse.webp" alt="">
+                                <div class="carousel_item_content">
+                                    <h2>Pulse Social</h2>
+                                    <p>Projet fictif: Réseau social. <a href="https://github.com/b-alvd/pulse-social" target="_blank">Répo Github</a></p>
+                                    <h3>Langages/Frameworks/CMS: </h3>
+                                    <img src="./src/assets/icons/php.png" alt="">
+                                    <img src="./src/assets/icons/html.png" alt="">
+                                    <img src="./src/assets/icons/css.png" alt="">
+                                    <img src="./src/assets/icons/sass.png" alt="">
+                                    <img src="./src/assets/icons/js.png" alt="">
+                                    <img src="./src/assets/icons/sql.png" alt="">
+                                </div>
                             </div>
                         </div>
-                        <div class="carousel_item">
-                            <h1>A venir...</h1>
+                        <div class="carousel_buttons">
+                            <button class="prev_project"> < </button>
+                            <span class="project_counter"></span>
+                            <button class="next_project"> > </button>
                         </div>
-                        <div class="carousel_item">
-                            <h1>A venir...</h1>
-                        </div>
+                        <button onclick="window.location='projects.html'">Plus de projets...</button>
                     </div>
-                    <div class="carousel_buttons">
-                        <button class="prev_project"> < </button>
-                        <span class="project_counter"></span>
-                        <button class="next_project"> > </button>
-                    </div>
-                    <button onclick="window.location='projects.html'">Plus de projets...</button>
-                </div>
-            </section>
-            <section id="contact">
-                <p></p>
-                <form id="discordForm">
-                    <label for="nom">Nom & Prénom :</label>
-                    <input type="text" id="nom" name="nom" required>
-                    <label for="email">Email :</label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="tel">Téléphone :</label>
-                    <input type="tel" id="phone" name="phone" required>
-                    <label for="society">Entreprise :</label>
-                    <input type="text" id="society" name="society" placeholder="Optionnel">
-                    <label for="message">Message :</label>
-                    <textarea id="message" name="message" required></textarea>
-                    <button type="submit">Envoyer</button>
-                </form>
-            </section>
+                </section>
+                <section id="contact">
+                    <p></p>
+                    <form id="discordForm">
+                        <label for="nom">Nom & Prénom :</label>
+                        <input type="text" id="nom" name="nom" required>
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="tel">Téléphone :</label>
+                        <input type="tel" id="phone" name="phone" required>
+                        <label for="society">Entreprise :</label>
+                        <input type="text" id="society" name="society" placeholder="Optionnel">
+                        <label for="message">Message :</label>
+                        <textarea id="message" name="message" required></textarea>
+                        <button type="submit">Envoyer</button>
+                    </form>
+                </section>
+            </div>
         </main>
         <footer>
             <p>&copy; 2024</p>

@@ -147,7 +147,7 @@ main #presentation #presentation_infos {
 }
 main #presentation #presentation_infos img {
   width: 100px;
-  transform: translateX(120%);
+  transform: translateX(115%);
 }
 main #presentation #presentation_infos h2 {
   font-size: 20px;
@@ -505,6 +505,9 @@ main #projects .project_container .project .project_content img {
     width: 80%;
     padding: 50px;
   }
+  main #presentation #presentation_infos img {
+    transform: translateX(0);
+  }
   main #presentation #presentation_infos .presentation_separator {
     transform: rotate(90deg);
     width: 15vw;
@@ -520,23 +523,34 @@ main #projects .project_container .project .project_content img {
     width: 0.15vw;
     margin-left: -1.25vw;
   }
-  main #projects .carousel_projects .carousel_item .project_img {
+  main #projects_contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  main #projects_contact #projects .carousel_projects {
+    width: 40vw;
+  }
+  main #projects_contact #projects .carousel_projects .carousel_item .project_img {
     height: 300px;
   }
-  main #projects .carousel_projects .carousel_item .carousel_item_content h2 {
+  main #projects_contact #projects .carousel_projects .carousel_item .carousel_item_content h2 {
     font-size: 24px;
   }
-  main #projects .carousel_projects .carousel_item .carousel_item_content p {
+  main #projects_contact #projects .carousel_projects .carousel_item .carousel_item_content p {
     font-size: 18px;
   }
-  main #projects .carousel_buttons button {
+  main #projects_contact #projects .carousel_projects .carousel_item .carousel_item_content img {
+    width: 40px;
+  }
+  main #projects_contact #projects .carousel_buttons button {
     padding: 12px 25px;
   }
-  main #contact form {
-    width: 40%;
+  main #projects_contact #contact form {
+    width: 25vw;
     padding: 40px;
   }
-  main #contact form button {
+  main #projects_contact #contact form button {
     font-size: 16px;
     padding: 12px 25px;
   }

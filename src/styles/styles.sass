@@ -94,7 +94,7 @@ main
             border-radius: 10px
             img
                 width: 100px
-                transform: translateX(120%)
+                transform: translateX(115%)
                 // border: 1px solid white
                 // border-radius: 100px
             h2
@@ -384,6 +384,8 @@ main
                 margin-top: -20px
                 width: 80%
                 padding: 50px
+                img
+                    transform: translateX(0)
                 .presentation_separator
                     transform: rotate(90deg)
                     width: 15vw
@@ -398,26 +400,33 @@ main
                             &::before
                                 width: 0.15vw
                                 margin-left: -1.25vw
-        #projects
-            .carousel_projects
-                .carousel_item
-                    .project_img
-                        height: 300px
-                    .carousel_item_content
-                        h2
-                            font-size: 24px
-                        p
-                            font-size: 18px
-            .carousel_buttons
-                button
-                    padding: 12px 25px
-        #contact
-            form
-                width: 40%
-                padding: 40px
-                button
-                    font-size: 16px
-                    padding: 12px 25px
+        #projects_contact
+            display: flex
+            justify-content: space-around
+            align-items: center
+            #projects
+                .carousel_projects
+                    width: 40vw
+                    .carousel_item
+                        .project_img
+                            height: 300px
+                        .carousel_item_content
+                            h2
+                                font-size: 24px
+                            p
+                                font-size: 18px
+                            img
+                                width: 40px
+                .carousel_buttons
+                    button
+                        padding: 12px 25px
+            #contact
+                form
+                    width: 25vw
+                    padding: 40px
+                    button
+                        font-size: 16px
+                        padding: 12px 25px
     footer
         p
             font-size: 15px
