@@ -12,7 +12,7 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
                     <div>
                         <h2 className="text-xl font-semibold text-violet-400 tracking-wide mb-3">&lt;b-alvd /&gt;</h2>
-                        <p className="text-sm text-gray-400 leading-relaxed">Développeur web passionné, créant des expériences numériques modernes et élégantes.</p>
+                        <p className="text-sm text-gray-400 leading-relaxed">Développeur web passionné, créant des expériences numériques modernes, élégantes et optimisées.</p>
                     </div>
 
                     <div className="flex flex-col items-center">
