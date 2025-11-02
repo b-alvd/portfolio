@@ -16,7 +16,7 @@ export default function Header() {
                     {open ? <X size={24} /> : <Menu size={24} />}
                 </button>
 
-                <ul className="hidden sm:flex gap-10 text-sm list-none">
+                <ul className="hidden sm:flex gap-10 text-[1.1rem] list-none">
                     <NavItem to="/" label="Accueil" />
                     <NavItem to="/projects" label="Projets" />
                     <NavItem to="/contact" label="Contact" />
