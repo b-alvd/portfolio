@@ -44,7 +44,7 @@ export default function Header() {
 function NavItem({ to, label, onClick }) {
     return (
         <li>
-            <NavLink to={to} onClick={onClick} className={({ isActive }) => `transition-colors duration-300 ${isActive ? "text-violet-400" : "text-gray-300 hover:text-violet-300"}`}>
+            <NavLink to={to} onClick={onClick} className={({ isActive }) => `relative transition-colors duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-0.5 after:h-[1.5px] after:bg-violet-400 after:transition-all after:duration-300 after:ease-out ${isActive ? "text-violet-400 after:w-full" : "text-gray-300 hover:text-violet-300 after:w-0 hover:after:w-full"}`}>
                 {label}
             </NavLink>
         </li>
