@@ -8,9 +8,7 @@ export default function Header() {
     return (
         <header className="fixed top-0 left-0 w-full z-50">
             <nav className={`mx-auto max-w-6xl flex items-center justify-between px-6 py-4 backdrop-blur-md bg-white/5 border-b border-white/10 shadow-[0_4px_20px_rgba(0,0,0,0.3)] transition-all duration-500 ${open ? "rounded-b-none" : "rounded-b-2xl"}`}>
-                <h1 className="text-xl font-semibold text-violet-400 tracking-wide">
-                    &lt;b-alvd /&gt;
-                </h1>
+                <h1 className="text-xl font-semibold text-violet-400 tracking-wide">&lt;b-alvd /&gt;</h1>
 
                 <button className="sm:hidden text-gray-300 hover:text-violet-300 transition-colors" onClick={() => setOpen(!open)}>
                     {open ? <X size={24} /> : <Menu size={24} />}
@@ -44,9 +42,7 @@ export default function Header() {
 function NavItem({ to, label, onClick }) {
     return (
         <li>
-            <NavLink to={to} onClick={onClick} className={({ isActive }) => `relative transition-colors duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-0.5 after:h-[1.5px] after:bg-violet-400 after:transition-all after:duration-300 after:ease-out ${isActive ? "text-violet-400 after:w-full" : "text-gray-300 hover:text-violet-300 after:w-0 hover:after:w-full"}`}>
-                {label}
-            </NavLink>
+            <NavLink to={to} onClick={onClick} className={({ isActive }) => `relative transition-colors duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-0.5 after:h-[1.5px] after:bg-violet-400 after:transition-all after:duration-300 after:ease-out ${isActive ? "text-violet-400 after:w-full" : "text-gray-300 hover:text-violet-300 after:w-0 hover:after:w-full"}`}>{label}</NavLink>
         </li>
     );
 }
