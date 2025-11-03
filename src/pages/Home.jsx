@@ -1,4 +1,4 @@
-import { Code, Globe, Mail, Palette, Rocket } from "lucide-react";
+import { ArrowRight, Code, Download, Globe, Mail, Palette, Rocket } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function Home() {
@@ -67,6 +67,27 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="py-20 px-6">
+                <div className="max-w-4xl mx-auto text-center backdrop-blur-md bg-gradient-to-r from-violet-500/10 to-purple-500/10 border border-violet-500/30 rounded-3xl p-12">
+                    <h2 className="text-4xl font-bold text-violet-400 mb-4">
+                        Travaillons ensemble
+                    </h2>
+                    <p className="text-gray-400 text-lg mb-8 max-w-2xl mx-auto">
+                        Un projet en tête ? Discutons-en ensemble et créons quelque chose d'incroyable.
+                    </p>
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        <Link to="/contact" className="group px-8 py-4 bg-violet-500 hover:bg-violet-600 rounded-xl text-white font-medium transition-all duration-300 hover:shadow-[0_0_30px_rgba(139,92,246,0.5)] flex items-center justify-center gap-2">
+                            Démarrer un projet
+                            <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+                        </Link>
+                        <a href="/cv_basile_alevequedessolin.pdf" download="cv_basile_alevequedessolin.pdf" className="px-8 py-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-violet-400/50 rounded-xl text-gray-300 hover:text-violet-300 font-medium transition-all duration-300 flex items-center justify-center gap-2">
+                            <Download size={20} />
+                            Télécharger mon CV
+                        </a>
                     </div>
                 </div>
             </section>
