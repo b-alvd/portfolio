@@ -91,6 +91,33 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+
+            <style>
+                {`
+                    @keyframes fade-in {
+                        from { opacity: 0; }
+                        to { opacity: 1; }
+                    }
+                    @keyframes fade-in-up {
+                        from { opacity: 0; transform: translateY(20px); }
+                        to { opacity: 1; transform: translateY(0); }
+                    }
+                    .animate-fade-in {
+                        animation: fade-in 0.8s ease-out forwards;
+                    }
+                    .animate-fade-in-up {
+                        animation: fade-in-up 0.8s ease-out forwards;
+                    }
+                    .animation-delay-200 {
+                        animation-delay: 0.2s;
+                        opacity: 0;
+                    }
+                    .animation-delay-400 {
+                        animation-delay: 0.4s;
+                        opacity: 0;
+                    }
+                `}
+            </style>
         </div>
     )
 }
