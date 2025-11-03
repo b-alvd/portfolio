@@ -33,6 +33,43 @@ export default function Home() {
                     <StatCard icon={<Rocket size={32} />} number="8+" label="D'années d'expérience en développement"/>
                 </div>
             </section>
+
+            <section className="py-20 px-6">
+                <div className="max-w-5xl mx-auto">
+                    <div className="grid md:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <h2 className="text-4xl font-bold text-violet-400 mb-6">
+                                À propos de moi
+                            </h2>
+                            <p className="text-gray-400 mb-4 leading-relaxed">
+                                Passionné par le développement web depuis plusieurs années, je me spécialise dans la création d'applications React modernes et performantes.
+                            </p>
+                            <p className="text-gray-400 mb-6 leading-relaxed">
+                                Mon objectif est de combiner design élégant et code de qualité pour créer des expériences utilisateur exceptionnelles.
+                            </p>
+                            <div className="flex flex-wrap gap-3">
+                                {["React", "Next.js", "Tailwind CSS", "TypeScript", "SQL"].map((tech) => (
+                                    <span key={tech} className="px-4 py-2 bg-violet-500/20 border border-violet-500/30 rounded-lg text-violet-300 text-sm">
+                                        {tech}
+                                    </span>
+                                ))}
+                            </div>
+                        </div>
+                        
+                        <div className="relative">
+                            <div className="backdrop-blur-md bg-white/5 border border-white/10 rounded-2xl p-8 hover:border-violet-400/50 transition-all duration-500 hover:shadow-[0_0_30px_rgba(139,92,246,0.3)]">
+                                <div className="space-y-6">
+                                    <SkillBar skill="Frontend" percentage={90} />
+                                    <SkillBar skill="Backend" percentage={80} />
+                                    <SkillBar skill="UI/UX Design" percentage={70} />
+                                    <SkillBar skill="Database" percentage={80} />
+                                    <SkillBar skill="Déploiement" percentage={75} />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     )
 }
@@ -48,6 +85,23 @@ function StatCard({ icon, number, label }) {
             </div>
             <div className="text-gray-400 text-sm">
                 {label}
+            </div>
+        </div>
+    );
+}
+
+function SkillBar({ skill, percentage }) {
+    return (
+        <div>
+            <div className="flex justify-between text-sm text-gray-400 mb-2">
+                <span>{skill}</span>
+                <span>{percentage}%</span>
+            </div>
+            <div className="w-full bg-white/10 rounded-full h-2 overflow-hidden">
+                <div 
+                    className="h-full bg-gradient-to-r from-violet-500 to-purple-600 rounded-full transition-all duration-1000 ease-out"
+                    style={{ width: `${percentage}%` }}
+                ></div>
             </div>
         </div>
     );
