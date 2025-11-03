@@ -1,5 +1,19 @@
 @import "tailwindcss";
 
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #080808;
+    color-scheme: dark;
+    min-height: 100%;
+}
+
+#root {
+    min-height: 100vh;
+    background-color: #080808;
+}
+
+
 .bg-noise::after {
     content: "";
     position: fixed;
