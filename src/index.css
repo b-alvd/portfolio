@@ -13,7 +13,6 @@ html, body {
     background-color: inherit;
 }
 
-
 .bg-noise::after {
     content: "";
     position: fixed;
