@@ -23,7 +23,7 @@ export default function Contact() {
         setStatus("sending");
 
         try {
-            const res = await fetch("https://portfolio-amber-phi-30.vercel.app/api/send-email", {
+            const res = await fetch("https://basilealeveque.fr/api/send-email", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(formData),
