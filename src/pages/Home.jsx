@@ -84,10 +84,6 @@ export default function Home() {
                             Démarrer un projet
                             <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
                         </Link>
-                        <a href="/cv_basile_alevequedessolin.pdf" download="cv_basile_alevequedessolin.pdf" className="px-8 py-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-violet-400/50 rounded-xl text-gray-300 hover:text-violet-300 font-medium transition-all duration-300 flex items-center justify-center gap-2">
-                            <Download size={20} />
-                            Télécharger mon CV
-                        </a>
                     </div>
                 </div>
             </section>
