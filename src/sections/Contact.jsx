@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useScrollReveal } from '../hooks/useScrollReveal'
 import './Contact.css'
 
-const API_URL = 'https://portfolio-email-back-tau.vercel.app/api/contact'
+const API_URL = 'https://portfolio-email-back-tau.vercel.app/api/send-email'
 
 export default function Contact() {
   const ref = useScrollReveal()
