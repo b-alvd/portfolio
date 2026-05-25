@@ -4,7 +4,9 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer__glow" />
       <div className="container footer__inner">
-        <div className="footer__logo">BASILE<span className="footer__dot">.</span><span className="footer__role">DEV</span></div>
+        <a className="footer__logo" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+          <img src="/logo.webp" alt="Basile" className="footer__logo-img" />
+        </a>
         <p className="footer__copy">© {new Date().getFullYear()} Basile ALEVEQUE</p>
         <div className="footer__socials">
           <a href="https://github.com/b-alvd" target="_blank" rel="noopener noreferrer" aria-label="GitHub" data-hover>

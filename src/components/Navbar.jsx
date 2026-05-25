@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import './Navbar.css'
 
 const links = [
+  { href: '#hero', label: 'Accueil' },
   { href: '#about', label: 'À propos' },
   { href: '#stack', label: 'Stack' },
   { href: '#projects', label: 'Projets' },
@@ -12,13 +13,18 @@ const links = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
-  const [active, setActive] = useState('')
+  const [active, setActive] = useState('#hero')
 
   useEffect(() => {
     const onScroll = () => {
       setScrolled(window.scrollY > 40)
 
-      const sections = links.map(l => l.href.slice(1))
+      if (window.scrollY < 100) {
+        setActive('#hero')
+        return
+      }
+
+      const sections = links.map(l => l.href.slice(1)).filter(s => s !== 'hero')
       for (let i = sections.length - 1; i >= 0; i--) {
         const el = document.getElementById(sections[i])
         if (el && window.scrollY >= el.offsetTop - 120) {
@@ -40,9 +46,7 @@ export default function Navbar() {
     <nav className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`}>
       <div className="navbar__inner">
         <a className="navbar__logo" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-          <span className="navbar__logo-name">BASILE</span>
-          <span className="navbar__logo-dot">.</span>
-          <span className="navbar__logo-role">DEV</span>
+          <img src="/logo.webp" alt="Basile" className="navbar__logo-img" />
         </a>
 
         <ul className="navbar__links">
@@ -58,18 +62,12 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <a className="navbar__cta" onClick={() => handleLink('#contact')}>
-          Me contacter
-        </a>
-
         <button
           className={`navbar__burger ${menuOpen ? 'navbar__burger--open' : ''}`}
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Menu"
         >
-          <span />
-          <span />
-          <span />
+          <span /><span /><span />
         </button>
       </div>
 

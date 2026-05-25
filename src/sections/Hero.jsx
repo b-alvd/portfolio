@@ -31,6 +31,10 @@ export default function Hero() {
           </p>
 
           <div className="hero__actions animate-fade-up" style={{animationDelay:'.46s'}}>
+            <a className="hero__btn hero__btn--contact"
+               onClick={() => document.querySelector('#contact')?.scrollIntoView({behavior:'smooth'})}>
+              Me contacter →
+            </a>
             <a className="hero__btn hero__btn--primary"
                onClick={() => document.querySelector('#projects')?.scrollIntoView({behavior:'smooth'})}>
               Voir les projets →

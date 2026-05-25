@@ -2,9 +2,9 @@ import { useScrollReveal } from '../hooks/useScrollReveal'
 import './Experience.css'
 
 const experiences = [
-  { year:'2025 – présent', title:'Développeur Full Stack', company:'Freelance - Indépendant', desc:'MenuQR (SaaS), projets clients, ... Du prototype à la prod.', tags:['React','Next.js','Vite','TypeScript','MySQL','Lua','Figma','PHP','Git'], color:'red', current:true },
-  { year:'2023 – 2024', title:'Formation "Développeur Web et Web mobile"', company:'Human Booster', desc:'Optention d\'un diplôme de niveau Bac +2.', tags:['API REST','JavaScript','UML','Linux', 'Angular', 'PHP'], color:'cyan', current:false },
-  { year:'2021 – 2023', title:'Lycée', company:'', desc:'Optention d\'un baccalauréat STI2D option ITEC (Innovation Technologique et Écoconception.', tags:[], color:'red', current:false },
+  { year:'2025 – présent', title:'Développeur Full Stack', company:'Freelance - Indépendant', desc:'QaRt (SaaS), projets clients, ... Du prototype à la prod.', tags:['React','Next.js','Vite','TypeScript','MySQL','Lua','Figma','PHP','Git'], color:'red', current:true },
+  { year:'2023 – 2024', title:'Formation "Développeur Web et Web mobile"', company:'Human Booster', desc:'Obtention d\'un diplôme de niveau Bac +2.', tags:['API REST','JavaScript','UML','Linux', 'Angular', 'PHP'], color:'cyan', current:false },
+  { year:'2021 – 2023', title:'Lycée', company:'', desc:'Obtention d\'un baccalauréat STI2D option ITEC (Innovation Technologique et Écoconception.', tags:[], color:'red', current:false },
 ]
 
 export default function Experience() {

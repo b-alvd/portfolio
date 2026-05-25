@@ -6,9 +6,8 @@
   pointer-events:none;
 }
 .footer__inner { display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; }
-.footer__logo { font-family:var(--font-d); font-size:20px; letter-spacing:.06em; color:var(--t3); }
-.footer__dot  { color:var(--red); }
-.footer__role { color:var(--t3); font-size:15px; }
+.footer__logo { cursor:pointer; display:flex; align-items:center; }
+.footer__logo-img { height:28px; width:auto; object-fit:contain; display:block; }
 .footer__copy { font-family:var(--font-m); font-size:11px; color:var(--t3); text-transform:uppercase; letter-spacing:.08em; }
 .footer__socials { display:flex; gap:10px; }
 .footer__socials a {

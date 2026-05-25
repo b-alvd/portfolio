@@ -43,7 +43,7 @@ const projects = [
     color: 'cyan',
     link: 'https://nebulor-web.vercel.app',
     featured: true,
-    desc: 'Site vitrine (amené à se développer) pour la présentation d\'un webtoon et une boutique lié à ce dernier.',
+    desc: 'Site vitrine (amené à se développer) pour la présentation d\'un webtoon et une boutique liée à ce dernier.',
     tags: ['React', 'Vite', 'CSS', 'Framer Motion'],
     details: `Nebulor est un webtoon de LeZorin, un thriller fantastique où une prophétie sommeillant au cœur de la forêt s’éveille le jour où le dernier enfant apparaît. L’autrice avait besoin d’un site qui reflète l’univers sombre et cosmique de son œuvre, tout en servant de vitrine pour cette dernière et une future boutique.
 
