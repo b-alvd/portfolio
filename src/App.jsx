@@ -8,6 +8,7 @@ import Projects from './sections/Projects'
 import Experience from './sections/Experience'
 import Contact from './sections/Contact'
 import Ticker from './components/Ticker'
+import ScrollTop from './components/ScrollTop'
 import './App.css'
 
 export default function App() {
@@ -37,6 +38,7 @@ export default function App() {
         <Contact />
       </main>
       <Footer />
+      <ScrollTop />
     </>
   )
 }

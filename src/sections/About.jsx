@@ -21,7 +21,7 @@ export default function About() {
             de la maquette au déploiement.
           </p>
           <div className="about__tags">
-            {['Full Stack','UI/UX','Freelance','Dev Web'].map(t => (
+            {['Dev Web','Full Stack','Freelance'].map(t => (
               <span key={t} className="about__tag">{t}</span>
             ))}
           </div>

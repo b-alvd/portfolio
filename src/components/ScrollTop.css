@@ -1,0 +1,48 @@
+.scroll-top {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 99;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-3);
+  border-radius: 50%;
+  opacity: 0;
+  transform: translateY(12px) scale(0.85);
+  transition: opacity .3s var(--ease), transform .3s var(--ease-spring);
+  cursor: pointer;
+}
+
+.scroll-top--visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.scroll-top:hover .scroll-top__arrow {
+  transform: translateY(-2px);
+}
+
+/* SVG progress ring — absolute, covers the button */
+.scroll-top__svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.scroll-top__arrow {
+  width: 16px;
+  height: 16px;
+  color: var(--t1);
+  position: relative;
+  z-index: 1;
+  transition: transform .2s var(--ease-spring);
+  flex-shrink: 0;
+}
+
+.scroll-top:hover {
+  background: var(--bg-4);
+}
