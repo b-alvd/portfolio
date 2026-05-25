@@ -50,7 +50,7 @@ form { display:flex; flex-direction:column; gap:18px; }
   padding:13px 28px; background:var(--red); color:#fff; border-radius:4px;
   font-family:var(--font-m); font-size:11px; font-weight:500;
   text-transform:uppercase; letter-spacing:.12em; transition:all .25s; width:100%; margin-top:4px;
-  position:relative; overflow:hidden;
+  position:relative; overflow:hidden; cursor: pointer;
 }
 .cf-submit::after {
   content:''; position:absolute; inset:0;
@@ -67,6 +67,6 @@ form { display:flex; flex-direction:column; gap:18px; }
 .contact__success h3 { font-family:var(--font-d); font-size:32px; text-transform:uppercase; color:var(--t1); }
 .contact__success p { color:var(--t2); font-size:14px; font-weight:300; }
 .contact__reset { margin-top:8px; padding:8px 20px; background:transparent; border:1px solid var(--border-2); border-radius:4px; color:var(--t2); font-family:var(--font-m); font-size:11px; text-transform:uppercase; letter-spacing:.1em; transition:all .2s; }
-.contact__reset:hover { color:var(--t1); border-color:rgba(255,255,255,.3); }
+.contact__reset:hover { color:var(--t1); border-color:rgba(255,255,255,.3); cursor: pointer; }
 
 @media(max-width:900px) { .contact__inner{grid-template-columns:1fr;gap:48px;} .cf-row{grid-template-columns:1fr;} .contact__form-wrap{padding:24px;} }

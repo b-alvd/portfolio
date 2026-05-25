@@ -7,7 +7,6 @@ import Stack from './sections/Stack'
 import Projects from './sections/Projects'
 import Experience from './sections/Experience'
 import Contact from './sections/Contact'
-import Cursor from './components/Cursor'
 import Ticker from './components/Ticker'
 import './App.css'
 
@@ -27,7 +26,6 @@ export default function App() {
 
   return (
     <>
-      <Cursor />
       <Navbar />
       <main>
         <Hero />

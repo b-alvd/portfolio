@@ -62,7 +62,7 @@
   text-transform: uppercase; letter-spacing: .1em;
   padding: 7px 14px; border-radius: 4px;
   transition: all .2s; align-self: flex-start;
-  border: 1px solid;
+  border: 1px solid; cursor: pointer;
 }
 .pcard__more--red    { color: var(--red);    border-color: rgba(255,61,0,.25);    background: var(--red-sub); }
 .pcard__more--indigo { color: var(--indigo); border-color: rgba(108,99,255,.25);  background: var(--indigo-sub); }
