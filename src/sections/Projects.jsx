@@ -21,12 +21,12 @@ const projects = [
   },
   {
     id: '02',
-    name: 'Smokoue Portfolio',
+    name: 'Portfolio - Smokoue',
     color: 'indigo',
     link: 'https://smokoue-portfolio.vercel.app',
     featured: true,
     desc: 'Portfolio one-page pour Smokoue, miniamaker.',
-    tags: ['React', 'Vite', 'CSS Modules'],
+    tags: ['React', 'Vite', 'CSS', 'Framer Motion'],
     details: `Smokoue, minimaker ayant généré plus de 7 millions de vues pour ses clients, avait besoin d'un portfolio qui reflète son univers visuel et qui mette en valeur son travail de façon immersive plutôt que de se contenter d'une simple galerie d'images.
 
   L'enjeu principal était de créer une expérience qui capte l'attention dès l'ouverture. J'ai conçu une animation d'intro avec un fond noir, l'avatar de Smokoue qui apparaît en zoom progressif puis s'efface, avant que deux volets s'écartent latéralement pour révéler la page.
@@ -36,6 +36,22 @@ const projects = [
   La section avant/après était techniquement le défi le plus intéressant : un slider interactif où l'utilisateur fait glisser une barre pour révéler la miniature retravaillée par Smokoue.
 
   Le site est entièrement responsive avec une navbar hamburger sur mobile, et intègre les métadonnées Open Graph pour générer une preview soignée lors du partage du lien.`,
+  },
+  {
+    id: '03',
+    name: 'Nebulor',
+    color: 'cyan',
+    link: 'https://nebulor-web.vercel.app',
+    featured: true,
+    desc: 'Site vitrine (amené à se développer) pour la présentation d\'un webtoon et une boutique lié à ce dernier.',
+    tags: ['React', 'Vite', 'CSS', 'Framer Motion'],
+    details: `Nebulor est un webtoon de LeZorin, un thriller fantastique où une prophétie sommeillant au cœur de la forêt s’éveille le jour où le dernier enfant apparaît. L’autrice avait besoin d’un site qui reflète l’univers sombre et cosmique de son œuvre, tout en servant de vitrine pour cette dernière et une future boutique.
+
+L’identité visuelle est tirée directement de la cover : noir profond, cyan turquoise, orange brûlé, violet. Un fond étoilé animé tourne en permanence sur toutes les pages, et la typographie du titre est préservée pour rester fidèle à l’univers graphique du webtoon.
+
+La page Personnages propose une expérience immersive en scroll snap plein écran, chaque personnage occupe toute la hauteur de l’écran, avec son image, son rang coloré et ses capacités. Une navigation latérale permet de sauter directement à n’importe quel personnage.
+
+La boutique présente les futurs produits: affiches, stickers, merch, goodies.`,
   },
 ]
 
