@@ -1,0 +1,20 @@
+.footer { border-top:1px solid var(--border); padding:28px 0; position:relative; overflow:hidden; }
+.footer__glow {
+  position:absolute; bottom:-40px; left:50%; transform:translateX(-50%);
+  width:400px; height:80px;
+  background:radial-gradient(ellipse, rgba(255,61,0,.08) 0%, transparent 70%);
+  pointer-events:none;
+}
+.footer__inner { display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; }
+.footer__logo { font-family:var(--font-d); font-size:20px; letter-spacing:.06em; color:var(--t3); }
+.footer__dot  { color:var(--red); }
+.footer__role { color:var(--t3); font-size:15px; }
+.footer__copy { font-family:var(--font-m); font-size:11px; color:var(--t3); text-transform:uppercase; letter-spacing:.08em; }
+.footer__socials { display:flex; gap:10px; }
+.footer__socials a {
+  display:flex; align-items:center; justify-content:center;
+  width:34px; height:34px; border-radius:4px; border:1px solid var(--border-2);
+  color:var(--t3); transition:all .2s;
+}
+.footer__socials a:hover { color:var(--red); border-color:rgba(255,61,0,.4); background:var(--red-sub); box-shadow:0 0 12px var(--red-glow); }
+@media(max-width:600px) { .footer__inner{flex-direction:column;align-items:center;text-align:center;gap:12px;} }

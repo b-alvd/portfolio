@@ -1,39 +1,44 @@
-import { Routes, Route } from "react-router-dom";
-import "./App.css";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Home from "./pages/Home";
-import Projects from "./pages/Projects";
-import Contact from "./pages/Contact";
+import { useEffect } from 'react'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+import Hero from './sections/Hero'
+import About from './sections/About'
+import Stack from './sections/Stack'
+import Projects from './sections/Projects'
+import Experience from './sections/Experience'
+import Contact from './sections/Contact'
+import Cursor from './components/Cursor'
+import Ticker from './components/Ticker'
+import './App.css'
 
-function App() {
+export default function App() {
+  // Glow cards mouse tracking
+  useEffect(() => {
+    const handler = (e) => {
+      document.querySelectorAll('.glow-card').forEach(card => {
+        const rect = card.getBoundingClientRect()
+        card.style.setProperty('--mx', `${e.clientX - rect.left}px`)
+        card.style.setProperty('--my', `${e.clientY - rect.top}px`)
+      })
+    }
+    window.addEventListener('mousemove', handler)
+    return () => window.removeEventListener('mousemove', handler)
+  }, [])
+
   return (
-    <div className="relative flex flex-col min-h-screen text-gray-100 overflow-x-hidden bg-[#080808] bg-noise">
-      <div className="pointer-events-none fixed -left-64 -top-48 w-[700px] h-[700px] rounded-full blur-[220px] opacity-20 bg-gradient-to-tr from-indigo-500 via-violet-500 to-transparent mix-blend-screen animate-blob"></div>
-      <div className="pointer-events-none fixed -right-64 bottom-16 w-[800px] h-[800px] rounded-full blur-[240px] opacity-18 bg-gradient-to-br from-purple-700 via-violet-500 to-transparent mix-blend-screen animate-blob animation-delay-2000"></div>
-
-      <Header />
-
-      <main className="relative z-10 flex-1 flex flex-col pt-20">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+    <>
+      <Cursor />
+      <Navbar />
+      <main>
+        <Hero />
+        <Ticker />
+        <About />
+        <Stack />
+        <Projects />
+        <Experience />
+        <Contact />
       </main>
-
       <Footer />
-
-      <style>{`
-        .animation-delay-2000 { animation-delay: 2s; }
-        @keyframes blob {
-          0%,100% { transform: translateY(0px) scale(1); }
-          50% { transform: translateY(-20px) scale(1.05); }
-        }
-        .animate-blob { animation: blob 12s ease-in-out infinite; }
-      `}</style>
-    </div>
-  );
+    </>
+  )
 }
-
-export default App;

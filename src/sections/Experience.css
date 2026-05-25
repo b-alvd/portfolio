@@ -1,0 +1,33 @@
+.exp__header { margin-bottom:56px; }
+.timeline    { display:flex; flex-direction:column; gap:0; max-width:760px; }
+.tl-item     { display:grid; grid-template-columns:32px 1fr; gap:24px; }
+.tl-line     { display:flex; flex-direction:column; align-items:center; padding-top:18px; }
+.tl-dot { width:10px; height:10px; border-radius:50%; flex-shrink:0; z-index:1; }
+.tl-dot--red    { background:var(--red);    box-shadow:0 0 8px var(--red-glow); }
+.tl-dot--indigo { background:var(--indigo); box-shadow:0 0 8px var(--indigo-glow); }
+.tl-dot--cyan   { background:var(--cyan);   box-shadow:0 0 8px var(--cyan-glow); }
+.tl-dot--current { animation:pulse-dot 2s ease-in-out infinite; }
+.tl-connector { flex:1; width:1px; background:var(--border-2); margin:8px 0; min-height:20px; }
+
+.tl-card { border-radius:0 8px 8px 0; padding:22px 24px; margin-bottom:20px; border-left:2px solid; }
+.tl-card--red    { border-left-color:var(--red); }
+.tl-card--indigo { border-left-color:var(--indigo); }
+.tl-card--cyan   { border-left-color:var(--cyan); }
+
+.tl-card:hover .tl-card--red    { box-shadow:inset 3px 0 0 var(--red); }
+
+.tl-meta  { display:flex; align-items:center; gap:10px; margin-bottom:8px; }
+.tl-year  { font-family:var(--font-m); font-size:11px; text-transform:uppercase; letter-spacing:.1em; }
+.tl-year--red    { color:var(--red); }
+.tl-year--indigo { color:var(--indigo); }
+.tl-year--cyan   { color:var(--cyan); }
+
+.tl-badge { font-family:var(--font-m); font-size:10px; color:var(--red); text-transform:uppercase; letter-spacing:.08em; }
+.tl-title { font-family:var(--font-d); font-size:24px; text-transform:uppercase; letter-spacing:.03em; color:var(--t1); margin-bottom:4px; line-height:1.1; }
+.tl-company { font-family:var(--font-m); font-size:11px; color:var(--t3); text-transform:uppercase; letter-spacing:.08em; margin-bottom:12px; }
+.tl-desc  { font-size:13.5px; font-weight:300; line-height:1.7; color:var(--t2); margin-bottom:14px; }
+.tl-tags  { display:flex; flex-wrap:wrap; gap:6px; }
+.tl-tag   { padding:3px 10px; border-radius:3px; font-family:var(--font-m); font-size:10px; text-transform:uppercase; letter-spacing:.06em; }
+.tl-tag--red    { background:var(--red-sub);    color:var(--red);    border:1px solid rgba(255,61,0,.2); }
+.tl-tag--indigo { background:var(--indigo-sub); color:var(--indigo); border:1px solid rgba(108,99,255,.2); }
+.tl-tag--cyan   { background:var(--cyan-sub);   color:var(--cyan);   border:1px solid rgba(0,229,255,.2); }

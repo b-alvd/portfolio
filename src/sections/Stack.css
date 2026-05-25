@@ -1,0 +1,27 @@
+.stack__header { margin-bottom:56px; }
+.stack__sub { color:var(--t3); font-family:var(--font-m); font-size:12px; margin-top:14px; text-transform:uppercase; letter-spacing:.1em; }
+.stack__grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+
+.stack__card { border-radius:8px; padding:28px; }
+.stack__accent { height:2px; margin-bottom:20px; border-radius:1px; }
+.stack__accent--red    { background:linear-gradient(90deg,var(--red),var(--red-2)); box-shadow:0 0 12px var(--red-glow); }
+.stack__accent--indigo { background:linear-gradient(90deg,var(--indigo),var(--indigo-2)); box-shadow:0 0 12px var(--indigo-glow); }
+.stack__accent--cyan   { background:linear-gradient(90deg,var(--cyan),rgba(0,229,255,.4)); box-shadow:0 0 12px var(--cyan-glow); }
+
+.stack__label { font-family:var(--font-m); font-size:10px; font-weight:400; text-transform:uppercase; letter-spacing:.15em; color:var(--t3); margin-bottom:24px; }
+.stack__list  { list-style:none; display:flex; flex-direction:column; gap:16px; }
+.stack__item-top { display:flex; justify-content:space-between; margin-bottom:7px; }
+.stack__item-name { font-size:13px; color:var(--t1); }
+.stack__item-pct  { font-family:var(--font-m); font-size:10px; }
+.stack__item-pct--red    { color:var(--red); }
+.stack__item-pct--indigo { color:var(--indigo); }
+.stack__item-pct--cyan   { color:var(--cyan); }
+
+.stack__bar-bg { height:2px; background:var(--border-2); border-radius:1px; overflow:hidden; }
+.stack__bar    { height:100%; border-radius:1px; width:0; transition:width 1.2s cubic-bezier(.4,0,.2,1); }
+.is-visible .stack__bar { width:var(--w); }
+.stack__bar--red    { background:linear-gradient(90deg,var(--red-dark),var(--red)); box-shadow:0 0 6px var(--red-glow); }
+.stack__bar--indigo { background:linear-gradient(90deg,var(--indigo-dim,#4a44cc),var(--indigo)); box-shadow:0 0 6px var(--indigo-glow); }
+.stack__bar--cyan   { background:linear-gradient(90deg,rgba(0,180,210,1),var(--cyan)); box-shadow:0 0 6px var(--cyan-glow); }
+
+@media(max-width:900px) { .stack__grid{grid-template-columns:1fr;} }
