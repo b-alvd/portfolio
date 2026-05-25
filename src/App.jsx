@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Hero from './sections/Hero'
@@ -9,9 +9,12 @@ import Experience from './sections/Experience'
 import Contact from './sections/Contact'
 import Ticker from './components/Ticker'
 import ScrollTop from './components/ScrollTop'
+import Loader from './components/Loader'
 import './App.css'
 
 export default function App() {
+  const [loading, setLoading] = useState(true)
+
   // Glow cards mouse tracking
   useEffect(() => {
     const handler = (e) => {
@@ -27,6 +30,7 @@ export default function App() {
 
   return (
     <>
+      {loading && <Loader onDone={() => setLoading(false)} />}
       <Navbar />
       <main>
         <Hero />
