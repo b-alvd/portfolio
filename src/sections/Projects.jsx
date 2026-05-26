@@ -23,7 +23,7 @@ const projects = [
     id: '02',
     name: 'Portfolio - Smokoue',
     color: 'indigo',
-    link: 'https://smokoue-portfolio.vercel.app',
+    link: 'https://smokoue.fr',
     featured: true,
     desc: 'Portfolio one-page pour Smokoue, miniamaker.',
     tags: ['React', 'Vite', 'CSS', 'Framer Motion'],
