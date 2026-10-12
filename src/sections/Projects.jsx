@@ -5,24 +5,8 @@ import './Projects.css'
 const projects = [
   {
     id: '01',
-    name: 'QaRt',
-    color: 'red',
-    link: 'https://qart-app.fr',
-    featured: true,
-    desc: 'Plateforme SaaS de menus digitaux par QR code.',
-    tags: ['React', 'Vite', 'Node.js', 'Express', 'MySQL', 'Stripe'],
-    details: `Les restaurateurs ont souvent du mal à maintenir leurs menus à jour et à offrir une expérience moderne à leurs clients. QaRt répond à ce problème en permettant de créer un menu digital accessible instantanément via QR code, sans application à installer.
-
-  L'enjeu technique principal était de construire un vrai produit SaaS : gestion des abonnements Stripe avec restrictions de features par plan, système de vérification email sécurisé pour les changements de mot de passe et d'adresse email, et un panel d'administration complet avec logs horodatés pour suivre toutes les actions.
-
-  Côté expérience utilisateur, chaque restaurant dispose de son propre univers visuel : logo, bannière, couleurs personnalisées. Les menus sont auto-traduits selon la langue du visiteur, et un QR code est généré automatiquement par menu, téléchargeable avec logo intégré pour les plans supérieurs.
-
-  Le tout est déployé sur qart-app.fr (frontend) et api.qart-app.fr (backend) via Plesk et Phusion Passenger.`,
-  },
-  {
-    id: '02',
     name: 'Portfolio - Smokoue',
-    color: 'indigo',
+    color: 'red',
     link: 'https://smokoue.fr',
     featured: true,
     desc: 'Portfolio one-page pour Smokoue, miniamaker.',
@@ -38,22 +22,49 @@ const projects = [
   Le site est entièrement responsive avec une navbar hamburger sur mobile, et intègre les métadonnées Open Graph pour générer une preview soignée lors du partage du lien.`,
   },
   {
-    id: '03',
+    id: '02',
     name: 'Nebulor',
-    color: 'cyan',
-    link: 'https://nebulor-web.vercel.app',
+    color: 'indigo',
+    link: 'https://nebulor.vercel.app/',
     featured: true,
     desc: 'Site vitrine (amené à se développer) pour la présentation d\'un webtoon et une boutique liée à ce dernier.',
     tags: ['React', 'Vite', 'CSS', 'Framer Motion'],
     details: `Nebulor est un webtoon de LeZorin, un thriller fantastique où une prophétie sommeillant au cœur de la forêt s’éveille le jour où le dernier enfant apparaît. L’autrice avait besoin d’un site qui reflète l’univers sombre et cosmique de son œuvre, tout en servant de vitrine pour cette dernière et une future boutique.
 
-L’identité visuelle est tirée directement de la cover : noir profond, cyan turquoise, orange brûlé, violet. Un fond étoilé animé tourne en permanence sur toutes les pages, et la typographie du titre est préservée pour rester fidèle à l’univers graphique du webtoon.
+    L’identité visuelle est tirée directement de la cover : noir profond, cyan turquoise, orange brûlé, violet. Un fond étoilé animé tourne en permanence sur toutes les pages, et la typographie du titre est préservée pour rester fidèle à l’univers graphique du webtoon.
 
-La page Personnages propose une expérience immersive en scroll snap plein écran, chaque personnage occupe toute la hauteur de l’écran, avec son image, son rang coloré et ses capacités. Une navigation latérale permet de sauter directement à n’importe quel personnage.
+    La page Personnages propose une expérience immersive en scroll snap plein écran, chaque personnage occupe toute la hauteur de l’écran, avec son image, son rang coloré et ses capacités. Une navigation latérale permet de sauter directement à n’importe quel personnage.
 
-La boutique présente les futurs produits: affiches, stickers, merch, goodies.`,
+    La boutique présente les futurs produits: affiches, stickers, merch, goodies.`,
+  },
+  {
+    id: '03',
+    name: 'ZorAnim',
+    color: 'cyan',
+    link: 'https://zoranim.vercel.app/',
+    featured: true,
+    desc: 'Plateforme de streaming pour animateurs 2D indépendants.',
+    tags: ['Next.JS', 'React', 'TypeScript', 'Turso', 'Cloudinary'],
+    details: `ZorAnim est la plateforme officielle de streaming d’animation de la communauté de LeZorin, les Zorins. Elle rassemble en un seul endroit les films et séries d’animation créés par les membres de la communauté : artistes solo ou studios.
+
+    Les spectateurs y regardent gratuitement ces créations depuis leur navigateur. Ils peuvent les noter, les commenter, se faire une liste de favoris et suivre des avant-premières diffusées en direct. Les créateurs y trouvent une vitrine : ils obtiennent un statut d’artiste, fondent ou rejoignent un studio, publient leurs œuvres et ont leur propre page. L’équipe gère tout depuis un panneau d’administration : validation des contenus, modération et programmation des sorties.`,
+  },
+  {
+    id: '04',
+    name: 'VOID Pack',
+    color: 'red',
+    link: 'https://void-pack.fr/',
+    featured: true,
+    desc: 'Jeu de cartes à collectionner en ligne : ouverture de boosters, collection, échanges et duels entre joueurs.',
+    tags: ['Next.JS', 'React', 'TypeScript', 'Zustand', 'Turso', 'Twitch Auth'],
+    details: `VOID Pack est un jeu de cartes à collectionner en ligne, gratuit, créé pour la communauté Twitch de LeZorin.
+
+    Les joueurs se connectent avec leur compte Twitch. Ils ouvrent des boosters de cartes réparties en cinq raretés (Commune, Rare, Épique, Légendaire et VOID) et complètent leur collection, avec des cartes inspirées de la communauté et des illustrations créditées aux artistes. Ils peuvent ensuite échanger leurs cartes entre amis ou sur un marché public, et s’affronter en duels au tour par tour avec un classement par saison.
+
+    Récompenses quotidiennes, missions, succès et niveaux font progresser les joueurs au jour le jour. Pendant les lives, les viewers peuvent gagner des boosters en échangeant leurs points de chaîne Twitch.`,
   },
 ]
+
 
 export default function Projects() {
   const ref = useScrollReveal()
